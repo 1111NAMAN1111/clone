@@ -1,0 +1,159 @@
+body{
+    background-color: aliceblue;
+    color: #212529;
+    transition: all .3s linear 0s;
+}
+.main {
+    margin: auto;
+    width: 78rem
+}
+.page {
+    font-family: Hi Melody,cursive;
+    font-family: Roboto Slab,serif;
+    margin-left: 6rem;
+    padding-bottom: 4rem;
+    width: 85%
+}
+.service-info {
+    padding-right: 6rem;
+    width: 40%
+}
+
+
+h4{
+    font-size: 1.5rem;
+   padding-left: 1.5rem;
+   margin-bottom: 3rem;
+   cursor: pointer;
+   transition: 0.2s;
+}
+h4:hover{
+    transform: scale(1.02);
+    color: #919191;
+}
+h2{
+  display: block;
+  font-size: 300%;
+  margin: 0;
+  padding-top: 0.4rem;
+  padding-right: 3rem;
+  font-weight: 300;
+  line-height:1.2em;
+  cursor: pointer;
+}
+h2:hover{
+    transform: scale(1.04);
+    box-shadow: 0 0.4px 0.1px rgba(0,0,0,0.2);
+}
+h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+p {
+    
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-right: 2.2rem;
+    transition: .1s;
+    transition-behavior: normal;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+}
+.service-info{
+    width: auto;
+    padding: 8px 12px;
+}
+
+
+.s1{
+    display: flex;
+    flex-direction: row;
+    
+}
+.text1{
+    
+    padding: 8px 0px;
+    margin: 10px 13px;
+}
+.details{
+    margin-top: 48px;
+    margin-bottom: 53px;
+}
+.link{
+    display: flex;
+    padding:10px;
+}
+.arrow{
+    margin: 25px -15px;
+}
+.link img{
+    
+    cursor: pointer;
+}
+.flipflop-card{
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+.flipflop-card-front,.flipflop-card-back{
+    backface-visibility: hidden;
+    transform-style:preserve-3d;
+    transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+
+}
+/* .flipflop-card-front,.flipflop-card-back img{
+    position: absolute;
+    top: 2px;
+    right: 0px;
+} */
+.flipflop-card-front{
+    transform: rotateY(0deg);
+}
+.flipflop-card-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+}
+.flipflop-card:hover .flipflop-card-front{
+    transform: rotateY(-180deg);
+}
+.flipflop-card:hover .flipflop-card-back{
+    transform: rotateY(0deg);
+}
+.dark-mode{
+    background-color: #212529;
+    border: solid;
+    border-color: #f0f8ff;
+    border-width: .5px;
+    color: #f0f8ff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 4rem;
+    padding: 1rem 2rem;
+    transition: .2s;
+}
+.dark-mode button:hover{
+    position: relative;
+    z-index: -1;
+    opacity: 0.4;
+    color: #919191;
+    background-color: bisque;
+
+    cursor: pointer;
+}
+@media screen and (width<=450px) {
+       .s1{
+          display: flex;
+          flex-direction: column;
+       }
+}
+
